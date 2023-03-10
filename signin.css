@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eeeded;
+}
+
+/* .tagline1{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 27%;
+    top: 58%; 
+}
+
+.tagline2{
+    color: #001428;
+    font-size: 25px;
+    position: absolute;
+    left: 36%;
+    top: 66%;
+} */
+
+.container{
+    height: 350px;
+    width: 400px;
+    background-color: #A5D8EF;
+    transition: all ls linear;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    width: 125px;
+    height: 90px;
+}
+
+.login_div{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    transition: all 0.2s ease;
+}
+
+.Signin_text{
+    color: #00142B;
+    position: absolute;
+    top: 35px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+input{
+    all: unset;
+    height: 40px;
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    position: absolute;
+    left: 70%;
+    top: 95px;
+    padding-left: 50px;
+    transform: translate(-50%, -50%);
+    color: #00142B;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fa-user, .fa-lock, .fa-envelope{
+    font-size: 20px;
+    position: absolute;
+    left: 15%;
+    top: 85px;
+    color: #4BB1DF;
+}
+
+.password_input{
+    top: 155px;
+}
+
+.fa-lock{
+    top: 145px;
+}
+
+.forgot_text{
+    color: #001428;
+    font-size: 13px;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-weight: 300;
+}
+.forgot_text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login_btn{
+    all: unset;
+    padding: 10px;
+    width: 230px;
+    background-color: #001428;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.social_text{
+    color: #001428;
+    font-size: 13px;
+    position: absolute;
+    top: 72%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-weight: 300;
+}
+
+
+.facebook, .twitter,.instagram{
+    padding:10px;
+    background: white;
+    border-radius: 100%;
+    width:40px;
+    height:40px;
+    float:left;
+    margin-left: 10px; 
+    top:270px;
+    justify-content:center; 
+    align-items:center; 
+    border:1px solid grey;
+    display:flex;
+    position:relative;
+    left:160px;
+    
+}
+    
+.facebook:hover,.twitter:hover,.instagram:hover {
+        border:1px solid #4BB1DF; 
+        background: #4BB1DF;
+        color: white;
+}
+       
+.dont_accounttext{
+    color:grey;
+    font-size: 13px;
+    bottom: 50px; 
+    left: 70%;
+    position:absolute; 
+    transform:translate(-50%, -50%); 
+    white-space:nowrap;
+}
+
+
+.signup_now{
+    color:#001428;
+    cursor: pointer;  
+}
+
+.signup_now:hover{
+    text-decoration: underline;
+}
+    
+::selection{
+    background:#4BB1DF; 
+    color: white;   
+}
+
+.iconc{
+    color: #001428;
+    font-size: 15px;
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        position: absolute;
+        height: 400px;
+        width: 300px;
+        top: 450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tagline1{
+        visibility: hidden;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .container{
+        position: absolute;
+        height: 400px;
+        width: 300px;
+        top: 450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tagline1{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .container{
+        position: absolute;
+        height: 400px;
+        width: 300px;
+        top: 320px;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        position: absolute;
+        top: 320px;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tagline1{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1100px) {
+    .container{
+        position: absolute;
+        height: 400px;
+        width: 300px;
+        top: 320px;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        position: absolute;
+        top: 300px;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tagline1{
+        position: absolute;
+        top: 430px;
+        left: 28%;
+        transform: translate(-50%, -50%);
+    }
+}

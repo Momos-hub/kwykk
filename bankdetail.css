@@ -1,0 +1,9 @@
+.emsg,.emsg1,.emsg2,.emsg3,.emsg4,.emsgmg{
+    color: red;
+    /* margin-top: 1px; */
+    font-size: smaller;
+}
+.hidden {
+     visibility:hidden;
+}
+

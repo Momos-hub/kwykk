@@ -1,0 +1,20 @@
+table{
+    margin-top: 10px;
+}
+
+tr{
+    margin: 10px;
+    border: 1px solid black;
+    height: 60px;
+}
+
+td{
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+}
+
+.but1{
+    margin: 10px;
+}

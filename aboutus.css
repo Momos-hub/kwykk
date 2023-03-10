@@ -1,0 +1,46 @@
+body{
+    background-image: linear-gradient(to bottom,#FFFFFF, #A5D8EF);
+    color: #001428;
+}
+
+.highlight{
+    font-weight: bolder;
+}
+
+.container{
+    margin: 30px 120px;
+}
+
+p{
+    font-size: 1.4rem;
+    margin: 40px 20px;
+}
+
+.cv{
+    margin:10px auto;
+}
+
+.cv p{
+    font-size: 1rem;
+}
+
+h6{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    /* position: relative; */
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {color:#001428}
+    25%  {color:#4BB1DF}
+    50%  {color:#001428}
+    75% {color:#4BB1DF}
+    100% {color:#001428}
+  }

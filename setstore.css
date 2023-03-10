@@ -1,0 +1,11 @@
+.col-md-6{
+    box-sizing: border-box !important;
+    /* padding: 10px !important; */
+}
+
+.emsgname,.emsgmail,.emsgcity,.emsgpin,.emsgadd,.emsgcell,.emsglink{
+    color: red;
+}
+.hidden {
+     visibility:hidden;
+}

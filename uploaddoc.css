@@ -1,0 +1,50 @@
+
+form{
+    margin: 15px;
+}
+
+.mb-3{
+    margin-top: 20px auto;
+}
+
+.row{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0px;
+}
+
+.buton{
+    border: none;
+}
+
+.submitimg{
+    height: 100px;
+    width: 100px;
+}
+
+#bike{
+    margin-top: 15px;
+    border-top-right-radius: 25px;
+}
+
+.emsg,.emsg1,.emsg2,.emsg3,.emsg4,.emsgmg{
+    color: red;
+}
+.hidden {
+     visibility:hidden;
+}
+
+button{
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #001428;
+    background-color: #4bb1df !important;
+    color: #001428;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left !important;
+    margin-right: 5px !important;
+}

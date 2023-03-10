@@ -1,0 +1,50 @@
+.box{
+    display: block;  
+}
+.center-box {
+    display:box;
+    align-items:center;
+    /* justify-content: center; */
+    }
+
+.addprod{
+    margin: 40px;
+    padding: 40px 40px 40px 40px;
+    box-shadow: 5px 5px 10px rgba(177, 173, 173, 0.849);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th, tr {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.menu{
+    text-align: center;
+}
+/* .menu1{
+    text-align: right;
+} */
+
+.emsgname,.emsgprice{
+    color: red;
+}
+.hidden {
+     visibility:hidden !important;
+}
+.swal-button {
+
+    border-radius: 2px;
+    background-color: #4BB1DF;
+    border: 1px solid #4BB1DF;
+    /* text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3); */
+  }
+  .swal-footer{
+      text-align:center;
+  }

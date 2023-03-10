@@ -1,0 +1,40 @@
+tr{
+    width: 100%;
+    border: 1px solid black;
+}
+
+td{
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+}
+
+th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.helpbox{
+    border: 1px solid black;
+    margin: auto;
+    padding: 20px;
+    display: block;
+}
+
+table{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.complaintbox{
+    margin: auto;
+    display: block;
+}
+
+.headd{
+    margin: 20px;
+    text-align: center;
+    color: #001428;
+}

@@ -1,0 +1,164 @@
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    /* margin: 0px auto; */
+    /* padding: 40px; */
+    width: 100%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+    padding-left: calc(100vh - 30%);
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  
+
+  .col-md-6{
+    box-sizing: border-box !important;
+    /* padding: 10px !important; */
+}
+
+.emsgname,.emsgmail,.emsgcity,.emsgpin,.emsgadd,.emsgcell,.emsglink{
+    color: red;
+}
+.hidden {
+     visibility:hidden;
+}
+
+.emsg,.emsg1,.emsg2,.emsg3,.emsg4,.emsgmg{
+    color: red;
+}
+.hidden {
+     visibility:hidden;
+}
+
+ul.form-stepper {
+    counter-reset: section;
+    margin-bottom: 3rem;
+}
+ul.form-stepper .step {
+    position: relative;
+}
+ul.form-stepper .step span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.form-stepper-horizontal {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+ul.form-stepper > li:not(:last-of-type) {
+    margin-bottom: 0.625rem;
+    -webkit-transition: margin-bottom 0.4s;
+    -o-transition: margin-bottom 0.4s;
+    transition: margin-bottom 0.4s;
+}
+.form-stepper-horizontal > li:not(:last-of-type) {
+    margin-bottom: 0 !important;
+}
+.form-stepper-horizontal li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.form-stepper-horizontal li:not(:last-child):after {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 1px;
+    content: "";
+    top: 32%;
+}
+.form-stepper-horizontal li:after {
+    background-color: #dee2e6;
+}
+.form-stepper-horizontal li.form-stepper-completed:after {
+    background-color: #4bb1df
+}
+.form-stepper-horizontal li:last-child {
+    flex: unset;
+}
+ul.form-stepper li a .step {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    line-height: 1.7rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    border-color: #4bb1df;
+}
+.step.active {
+    background-color: #4bb1df !important;
+    color: #fff;
+    margin-bottom: 0 !important;
+}
+.form-stepper .form-stepper-active .label {
+    color: #4bb1df !important;
+}
+.form-stepper .form-stepper-active .step:hover {
+    background-color: #4bb1df !important;
+    color: #fff !important;
+}
+
+.step.finish {
+    background-color: #4bb1df !important;
+    color: #fff;
+}
+.form-stepper .form-stepper-completed .label {
+    color: #4bb1df !important;
+}
+.form-stepper .form-stepper-completed .step:hover {
+    background-color: #4bb1df !important;
+    color: #fff !important;
+}
+.form-stepper .form-stepper-active span.text-muted {
+    color: #fff !important;
+}
+.form-stepper .form-stepper-completed span.text-muted {
+    color: #fff !important;
+}
+.form-stepper .label {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.form-stepper a {
+    cursor: default;
+}
+
+

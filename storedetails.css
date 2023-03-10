@@ -1,0 +1,49 @@
+
+.form-label{
+    font-size: 15px;
+}
+
+.form-group-label{
+    float: left !important;
+    font-size: 15px ;
+}
+
+.form{
+    margin: 10px;
+    font-size: 15px;
+} 
+
+.mb-3{
+    margin-top: 0px auto;
+}
+
+.row{
+    /* background-image: ; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0px;
+}
+
+.button{
+    padding: 0.7rem 1.5rem;
+    border: 0px solid #4bb1df !important;
+    background-color: #4bb1df !important;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left !important;
+    margin-right: 5px !important;
+}
+ .submitimg{
+    height: 100px;
+    width: 100px;
+} 
+
+.link1{
+    color: white;
+
+}

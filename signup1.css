@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eeeded;
+}
+
+.container{
+    height: 420px;
+    width: 500px;
+    background-color: #A5D8EF;
+    transition: all ls linear;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    width: 125px;
+    height: 90px;
+}
+
+input{
+    all: unset;
+    height: 40px;
+    width: 350px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 95px;
+    padding-left: 50px;
+    transform: translate(-50%, -50%);
+    color: #00142B;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fa-user,.fa-mobile,.fa-envelope,.fa-lock,.fa-lock-keyhole{
+    font-size: 20px;
+    position: absolute;
+    left: 15%;
+    top: 70px;
+    color: #4BB1DF;
+}
+
+.fa-mobile{
+    top: 125px;
+}
+.fa-envelope{
+    top: 120px;
+}
+.fa-lock{
+    top: 170px;
+}
+
+.fa-lock-keyhole{
+    top: 190px;
+}
+
+.signup_btn{
+    all: unset;
+    padding: 10px;
+    width: 230px;
+    background-color: #001428;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.already_accounttext{
+    color:grey;
+    font-size: 13px;
+    bottom: 10px; 
+    left: 50%;
+    position:absolute; 
+    transform:translate(-50%, -50%); 
+    white-space:nowrap;
+    font-weight: bold;
+}
+
+.signin_now{
+    color:#001428;
+    cursor: pointer;  
+}
+
+.signin_now:hover{
+    text-decoration: underline;  
+}
+
+::selection{
+    background:#4BB1DF; 
+    color: white;   
+}
+
+/* .registration_div{   
+    height:700px; 
+    width:300px;
+    position:absolute;
+    left:300px;
+    background:#A5D8EF;
+    border-radius:20px; 
+} */
+
+.tandd{
+    position: absolute;
+    top: 45%;
+    left:5%;
+}
+
+.tdl{
+    color: black;
+}
+.signup_text{
+    position:absolute; 
+    top:30px;
+    color: black; 
+    transform:translate(-50%, -50%); 
+    font-size:30px; 
+    left:50%;
+}
+    
+.signup_username_input{
+    margin-top:-15px; 
+}
+ 
+.signup_mobile_input{
+    margin-top:40px;
+
+}
+.signup_email_input{
+    margin-top:95px; 
+}
+        
+.signup_password_input{ 
+    margin-top: 150px;
+}
+
+/* .terms_cond_input{ 
+    margin-top: 200px;
+} */
+
+#emailicon {margin-top:60px;}
+        
+#lockicon {margin-top:60px;}  
+
+/* #repwdicon {margin-top:60px;} */
+        
+.signup_btn{margin-top:-10px;}
+        
+.social_text2{
+    color: black;
+    top:85%;
+    font-size:13px;
+    position:absolute; 
+    left:25%; 
+    transform:translate(-50%, -50%); 
+    white-space:nowrap; 
+    font-weight:300;
+}
+
+.facebook2, .twitter2, .instagram2{ 
+    padding: 18px;
+    border-radius:100%; 
+    height:30px;
+    width:30px; 
+    float: left;
+    background: white; 
+    margin-left:10px; 
+    position:relative; 
+    display:flex; 
+    justify-content:center; 
+    font-size:13px;    
+    left:180px;
+    top: 340px;
+    align-items:center;
+    border:1px solid grey;
+}    
+    
+.facebook2:hover,.twitter2:hover,.instagram2:hover{ 
+    background:#4BB1DF;
+    color: white; 
+    border:1px solid #4BB1DF;
+}
+
+.iconc{
+    color: #001428;
+    font-size: 15px;
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        position: relative;
+        height: 500px;
+        width: 500px;
+        top: 450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        position: relative;
+        top: 120px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tagline1{
+        visibility: hidden;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .container{
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        top: 450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tagline1{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .container{
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        top: 320px;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        position: absolute;
+        top: 320px;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tagline1{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1100px) {
+    .container{
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        top: 320px;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo{
+        position: absolute;
+        top: 300px;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tagline1{
+        position: absolute;
+        top: 430px;
+        left: 28%;
+        transform: translate(-50%, -50%);
+    }
+}

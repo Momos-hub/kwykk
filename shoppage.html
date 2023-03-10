@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="shoppage.css">
+    <!-- <link rel="stylesheet" href="customerdash.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/9e5fee4591.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    
+    <link rel="shortcut icon" href="White_on_Blue.png" type="image/x-icon">
+</head>
+<style>
+.active,.na:hover{
+    color: #4bb1df;
+}
+
+</style>
+
+<body> 
+    <div id="navbar">
+        <ul>
+            <li><i class="fa-solid fa-angle-left"></i></li>
+            <li class="nav-item"><img class="navlogo" src="" alt=""></li>
+            <li class="nav-item"><label for="type"></label>
+                <select class="ordertype">
+                    <option value="Home Delivery">HOME DELIVERY</option>
+                    <option value="Takeaway">TAKEAWAY</option>
+                </select>
+            </li>
+            <li class="nav-item">
+                <input type="text" name="locateme"class="location"><button><i class="fa-solid fa-crosshairs"></i>Locate me</button>
+            </li>
+           
+            <span class="nav-item" style="float:right"><i class="fa-regular fa-user"></i><a class="navitem" href="#">Login</a></span>
+            <span class="nav-item" style="float:right"><i class="fa-solid fa-cart-shopping"></i><a class="navitem" href="#">Cart</a></span>
+            <span class="nav-item" style="float:right"><i class="fa-solid fa-magnifying-glass"></i><a class="navitem" href="#">Search</a></span>
+        </ul>
+    </div>
+    
+    <div class="shopimage">
+        <div class="left-content">
+            <div class="flex-container">
+                <div>
+                    <img class="shop-logo" src="popular.png" alt="">
+                </div>
+                <div class="right-container">
+                    <h4 class="shop-name">Singh Saab</h4>
+                    <div class="shoplocation">
+                        <a class="shop-location" href="#location"><i class="fa-solid fa-location-dot" style="color: red;"></i><p>Locaation</p></a>
+                    </div>
+                    <div class="rating">
+                        <a href="#rate"><i class="fa-solid fa-star" style="color: yellow;"></i><p class="">Rate Us</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-content">
+            <img class="right-content" src="Web/assorted-american-food-top-view-109748438.jpg" alt="">
+        </div>
+
+    </div>
+    <div id="banner-footer" class="banner-footer">
+        <div class="search-div">
+            <form>
+                <input type="text" class="search" placeholder="Search product">
+            </form>
+        </div>
+        <div>
+            <button class="veg">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox-rectangle">Veg Only</span>
+                </label>
+            </button>
+        </div>                        
+    </div>
+
+    <div class="grid-container" style="grid-template-columns: 250px 700px 250px;">
+        <div class="grid-category">
+            <div id="cart-fix" style="background-color: #fff;">
+                <div class="row1">Menu</div>
+                <div class="row-content">
+                    <div class="row-info">
+
+                    
+                        <div class="row-type">
+                            <a class="na">One</a>
+                            <a class="na">To</a>
+                            <a class="na">Three</a>
+                            <a class="na">Four</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-menu" style="text-align: center;">
+            <div class="product" style="width: auto;">
+                <div class="produt-top" style="margin-top: 20px;margin-bottom: 20px;">
+                    <div class="product-side" style="background-color: #fff;margin: 0 30px;border-radius: 5px;">
+                        <div class="product-list">
+                            <div class="veg-non-veg">
+                                <img style="height: 15px; width: 15px;vertical-align: middle;" class="veg-non" src="https://www.kwyk.one/en/assets/img/veg.jpg" alt="">
+                            </div>
+                            <div class="product-img">
+                                <img class="prod-img" src="https://d2sz1kgdtrlf1n.cloudfront.net/yelo_products/thumb-400-400-4z3g1znfkgC0pO1638601580589-Mysore20Cheese20Masala20Dosa.jpg" alt="">
+                            </div>
+                            <div class="product-name-main" style="overflow: hidden;padding: 0 0 10px;width: 100%;">
+                                <div class="product-name">
+                                    <div class="div1">
+                                        <span>Mysore Masala Dosa</span>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <div class="price-text">170</div>
+                                    <div class="plus">
+                                        <form action="?action=add&pr_id=<?= $row['pr_id']; ?>" method="post">
+                                            <input type="text" class="cart-quantity" name="quantity" value="1" size="2">
+                                            <button class="btn" type="submit">
+                                            <i class="fa-solid fa-square-plus"></i>
+                                            </button>
+                                            <!-- <input type="submit" value="" class="btn btn-success btn-sm"> -->
+                                        </form>
+                                        <!-- <button class="btn"><i class="fa-solid fa-square-plus"></i></button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-cart">
+            <div id="cart-fix" style="background-color: #fff;">
+                <div class="cart">
+                    <div class="cart-text">Cart</div>
+                    <div id="remove" class="cart-text">
+                        <i  class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+                <!-- <div class="empty-cart">
+                    <span>
+                        <img class="emptycart" src="https://www.kwyk.one/en/assets/img/emptyCart.png" alt="">
+                    </span>
+                    <span>Your Cart Is Empty</span>
+                    <span>Add an Item to cart</span>
+                </div> -->
+                <div class="cart-content">
+                    <div class="cart-container" style="justify-content: space-between;">
+                        <div class="cart-container">
+                            <div class="cart-name" >
+                                <p class="food-name">Paper Dosa</p>
+                                <span>₹ 80.00</span>
+                            </div>
+                        </div>
+                        <div class="cart-total" style="display: flex;">
+                            <div class="cart-tot" style="display: flex;justify-content: flex-start;">
+                                <div class="cart-btn" style="display: flex;">
+                                    <div class="cart-minus">
+                                        <a class href="?action=remove&pr_id=<?= $item['pr_id']; ?>"><i class='fas fa-minus'></i></a>
+                                    </div>
+                                    <div class="cart-quantity"><input class="cart-quantity" type="text"></div>
+                                    <div class="cart-plus"><i class='fas fa-plus-square' style="font-size:24px;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="subtotal">
+                        <div class="sub" >
+                            <span class="head">Subtotal</span>
+                        </div>
+                        <div class="sub-text" >
+                            <span class="tail">₹ 80.00</span>
+                        </div>
+                    </div>
+                    <button onclick="" class="total-btn">
+                        <span class="btn-text">Checkout</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div> 
+    
+    
+    <div id="footer">
+        <footer class="footer">
+            <div class="footer-left">
+                <img class="footer-img" src="" alt=""><br>
+                <div class="follow">Follow us on 
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <h3>About US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad explicabo architecto, unde doloremque vero incidunt necessitatibus quisquam voluptas quia odio possimus enim. Repellendus, impedit quaerat. Dolor corporis accusamus impedit.</p>
+            </div>
+            <div class="footer-right">
+                <h3>CONTACT US</h3>
+                <p><i class="fa-brands fa-whatsapp"></i>phone</p>
+                <p><i class="fa-solid fa-envelope-open"></i>Email</p>
+                <p><i class="fa-solid fa-store"></i>Motiram Avenue, NDA-Pashan Road, Bavdhan, Pune 411021</p>
+            </div>
+            
+            <hr style="border-top: 1px solid whitesmoke">
+            <div class="footer-bottom">
+                <div style="text-align: left;">
+                    <center >Copyright © Store name. All Right Reserved</center>
+                </div>
+                <div style="text-align: right;">
+                    <a style="color: aliceblue;" href="https://www.kwyk.one/en/">Powered by:<b style="color: aqua;">KWYK</b></a>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let buttons = document.querySelectorAll('.na')
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');        
+        });
+    });
+    </script>   
+</body>
+</html>

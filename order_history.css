@@ -1,0 +1,23 @@
+.heading{
+    text-align: center;
+    padding: 20px 0;
+}
+.title{
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333;
+}
+.row-eq-height{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+

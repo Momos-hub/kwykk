@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9e5fee4591.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="payment.css">
+    
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="wrapper">
+        <div class="payment-heading">
+            <p class="title">Payment</p>  
+            <hr class="title-bar" style="border-top-color: rgb(75, 177, 223);">      
+        </div>
+        <div class="login-form">
+            <div class="payment-card" style="width: 1000px">
+                <div class="bill">
+                    <i class="fa-solid fa-receipt" style="margin: 14.5px 12px 14.5px 20px;float: left;vertical-align: middle;"></i>
+                    <p class="bill-text">Bill Summary</p>
+                </div>
+                <div class="payment-cart">
+                    <div class="pmnt-cart">
+                        <div class="pt-name">Subtotal</div>
+                        <div class="pt-val">₹620.00</div>                   
+                    </div>
+                    <div>
+                        <div class="pmnt-cart">
+                            <div class="pt-name">GST @ 5%</div>
+                            <div class="pt-val">₹31</div>                            
+                        </div>
+                    </div> 
+                    <div>
+                        <div class="pmnt-cart">
+                            <div class="pt-name">Delivery Fees</div>
+                            <div class="pt-val">₹80</div>                            
+                        </div>
+                    </div>
+                    <hr class="pmnt-sep">
+                    <div class="pmnt-subt">
+                        <p class="subt-txt" style="direction: ltr;float: left;color: rgba(0,0,0,0.87);">Total</p>
+                        <p class="subt-val" style="color: rgb(75, 177, 223);float: right;">₹800</p>
+                    </div><br><br>
+                </div>
+                <div>
+                    <div class="bill">
+                        <div>
+                            <i class="fa-solid fa-hand-holding-dollar" style="margin: 14.5px 12px 14.5px 20px;
+                            float: left; vertical-align: middle;"></i>
+                            <p class="bill-text">Tip</p>
+                        </div>
+                    </div>
+                    <div class="payment-cart">
+                        <div style="box-sizing: border-box;">
+                            <div class="tip-qty">    
+                                <div class="tip-opt" id="" onclick="twenty()">
+                                    <span>₹20</span>
+                                </div>
+                            </div>
+                            <div class="tip-qty" onclick="thirty()">    
+                                <div class="tip-opt">
+                                    <span>₹30</span>
+                                </div>
+                            </div>
+                            <div class="tip-qty" onclick="fifty()">    
+                                <div class="tip-opt">
+                                    <span>₹50</span>
+                                </div>
+                            </div>
+                            <div class="tip-qty" onclick="hundred()">    
+                                <div class="tip-opt">
+                                    <span>₹100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tipqty">
+                            <div class="row" style="margin-right: -15px;margin-left: -15px;">
+                                <form action="">
+                                    <div class="tip-inp">
+                                        <input type="text" id="value" placeholder="Enter Tip Amount" class="formctr">
+                                    </div>
+                                    <div class="tip-subt">
+                                        <button class="subt-btn">Submit</button>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div>
+                    <div class="bill">
+                        <div>
+                            <i class="fa-solid fa-hand-holding-dollar" style="margin: 14.5px 12px 14.5px 20px;
+                            float: left; vertical-align: middle;"></i>
+                            <p class="bill-text">Promotion(s)</p>
+                            <p class="promo">
+                                Add a Promo / Referral Code
+                            </p>
+                        </div>
+                    </div>
+                    <div class="payment-cart" style="height: 10px;"></div>
+
+                </div>
+                <div>
+                    <div class="bill">
+                        <div>
+                            <i class="fa-solid fa-hand-holding-dollar" style="margin: 14.5px 12px 14.5px 20px;
+                            float: left; vertical-align: middle;"></i>
+                            <p class="bill-text">Payment Method</p>
+                        </div>
+                    </div>
+                    <div class="pay-option">
+                        <div class="row" style="margin-right: -15px;margin-left: -15px;">
+                            <div class="pay-type" style="display: flex;flex-wrap: wrap;float: left;">
+                                <div class="repeat">
+                                    <button class="pay-btn">
+                                        <span>
+                                            <div class="pay">
+                                                <img class="paytype-img" src="netBanking.png" alt="">
+                                                <div class="paytxt">Card/Net Banking/UPI</div>
+                                            </div>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-right: -15px;margin-left: -15px;">
+                            <div class="pay-type" style="display: flex;flex-wrap: wrap;float: left;">
+                                <div class="repeat">
+                                    <button class="pay-btn">
+                                        <span>
+                                            <div class="pay">
+                                                <img class="paytype-img" src="wallet.png" alt="">
+                                                <div class="paytxt">Pay Via Wallet</div>
+                                            </div>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="process">
+                <span>Pay 
+                    <span>₹ 756.00</span>
+                </span>
+                <div class="processbtn"></div>
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        function twenty(){
+            document.getElementById('value').value="20"
+        }
+        function thirty(){
+            document.getElementById('value').value="30"
+        }
+        function fifty(){
+            document.getElementById('value').value="50"
+        }
+        function hundred(){
+            document.getElementById('value').value="100"
+        }
+
+    </script>
+</body>
+</html>
